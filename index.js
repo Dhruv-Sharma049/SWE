@@ -17,7 +17,7 @@ app.post('/adduser', async (req,res) => {
          const newuser = new User({
            name: req.body.name,
            email: req.body.email,
-           phone: req.body.password,
+           phone: req.body.phone,
          });
          const added_user = await newuser.save();
          return res.send({

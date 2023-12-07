@@ -8,7 +8,7 @@ const schema = new mongoose.Schema({
     type: String,
     require: true,
   },
-  password: {
+  phone: {
     type: String,
     require: true,
   },
