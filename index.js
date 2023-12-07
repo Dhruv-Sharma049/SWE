@@ -5,6 +5,8 @@ const path = require("path")
 const User = require('./models/new_user'); // Adjust the path based on your project structure
 const port = 3000;
 app.use(express.json());
+const cors  = require("cors")
+app.use(cors());
 
 // Replace the connection string with your MongoDB Atlas connection string
 const uri =
